@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test</title>
+</head>
+<body>
+    
+    <button id="redbtn">Red</button>
+    <button id="bluebtn">Blue</button>
+
+    <script>
+        let redbtn = document.getElementById("redbtn");
+
+        redbtn.addEventListener("click", function() { 
+            document.body.style.backgroundColor = "red"; 
+        });
+
+        // Adding event listener for blue button as well
+        let bluebtn = document.getElementById("bluebtn");
+
+        bluebtn.addEventListener("click", function() { 
+            document.body.style.backgroundColor = "blue"; 
+        });
+        
+
+    </script>
+</body>
+</html>
