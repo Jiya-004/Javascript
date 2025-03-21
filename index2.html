@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="demo" id ="demoid">Hello</div>
+    <button id="btn">submit</button>   
+    <script>
+        const demoid = document.getElementById("demoid")
+        console.log(demoid)
+    const btn = document.getElementById("btn")
+    btn.addEventListener("click",function(){
+        demoid.innerHTML="I am changed"
+    })
+ 
+    </script> 
+</body>
+</html>
