@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1 {
+  color:black;
+  text-align:center;
+}
+.container{
+      background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            
+}
+ label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 500;
+        }
+input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+             box-sizing: border-box;
+            font-size: 14px;
+        }
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+        }
+         .checkbox {
+           
+            align-items: center;
+            margin: 20px 0;
+        }
+         .register {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Registration Form</h1>
+    <label for="fullname">Full Name</label><br>
+    <input type="text" name="fullname" id="fullname">
+<br><br>
+        <label for="email">Email</label><br>
+    <input type="email" name="email" id="email">
+<br><br>
+        <label for="Password">Password</label><br>
+    <input type="password"   id="Password">
+<br><br>
+        <label for="Date">Date of Birth</label><br>
+    <input type="date"  id="Date">
+<br><br>
+    <label for="gender">Gender</label><br>
+    <select name="gender" id="gender">
+        <option value="">--Select--</option>
+        <option value="1">male</option>
+        <option value="2">female</option>
+        <option value="3">other</option>
+    </select>
+<input type="checkbox" class="checkbox">I accept the terms and conditions
+<br><br>
+<button class="register">Resister</button>
+</div>
+</body>
+</html>
